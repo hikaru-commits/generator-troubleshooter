@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="船舶用ディーゼル発電機の教育用トラブルシューティングシミュレーター">
+  <title>GENERATOR TROUBLESHOOTER</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" data-action="title" aria-label="タイトルへ戻る"><span class="brand-mark">GT</span><span>GENERATOR<br><b>TROUBLESHOOTER</b></span></a>
+    <div class="header-actions"><button class="btn ghost" data-action="guide">遊び方</button><button class="btn ghost game-only" data-action="hint">ヒント</button><button class="btn ghost game-only" data-action="ai">AIに相談</button></div>
+  </header>
+  <main id="app"></main>
+  <div id="modal" class="modal" hidden><div class="modal-backdrop" data-action="close-modal"></div><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" data-action="close-modal" aria-label="閉じる">×</button><div id="modal-content"></div></section></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <footer>EDUCATIONAL SIMULATION · 実機では正式な手順書と責任者の指示に従ってください</footer>
+  <script src="script.js"></script>
+</body>
+</html>
